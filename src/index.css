@@ -1,0 +1,220 @@
+/* @import "tailwindcss"; */
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap'); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+    --teal: #00e5c8;
+    --teal-dim: #00b5a0;
+    --teal-glow: rgba(0, 229, 200, 0.15);
+    --navy: #050d1a;
+    --navy-2: #0a1628;
+    --navy-3: #0f1f38;
+    --navy-4: #162840;
+    --card-bg: rgba(15, 31, 56, 0.8);
+    --border: rgba(0, 229, 200, 0.15);
+    --border-dim: rgba(255, 255, 255, 0.06);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--navy);
+    color: #e2e8f0;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+/* Custom scrollbar */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--navy);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--teal-dim);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--teal);
+}
+
+
+/* Teal glow utility */
+
+.teal-glow {
+    text-shadow: 0 0 30px rgba(0, 229, 200, 0.4);
+}
+
+
+/* Section fade-in animation */
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Teal underline accent */
+
+.section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 12px;
+}
+
+.section-tag::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 1.5px;
+    background: var(--teal);
+}
+
+
+/* Gradient text */
+
+.gradient-text {
+    background: linear-gradient(135deg, #fff 0%, var(--teal) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* Noise texture overlay for depth */
+
+.noise::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+/* Card hover effect */
+
+.card-hover {
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-4px);
+    border-color: rgba(0, 229, 200, 0.35) !important;
+    box-shadow: 0 20px 60px rgba(0, 229, 200, 0.08);
+}
+
+
+/* Tech badge */
+
+.tech-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 11.5px;
+    font-weight: 500;
+    background: rgba(0, 229, 200, 0.08);
+    color: var(--teal);
+    border: 1px solid rgba(0, 229, 200, 0.2);
+    white-space: nowrap;
+}
+
+
+/* Dot grid background pattern */
+
+.dot-grid {
+    background-image: radial-gradient(circle, rgba(0, 229, 200, 0.08) 1px, transparent 1px);
+    background-size: 28px 28px;
+}
+
+
+/* Animated gradient border on buttons */
+
+.btn-primary {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--navy);
+    background: var(--teal);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+    letter-spacing: 0.01em;
+}
+
+.btn-primary:hover {
+    background: #00f5d8;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 32px rgba(0, 229, 200, 0.3);
+}
+
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 27px;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--teal);
+    background: transparent;
+    border: 1.5px solid rgba(0, 229, 200, 0.4);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.btn-secondary:hover {
+    background: rgba(0, 229, 200, 0.08);
+    border-color: var(--teal);
+    transform: translateY(-1px);
+}
