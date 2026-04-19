@@ -76,7 +76,7 @@ export default function Experience() {
             }}
           />
 
-          <div style={{ display: "flex", flexDirection: "column", gap: "40px", paddingLeft: "56px" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "40px", paddingLeft: "52px" }}>
             {EXPERIENCES.map(({ role, company, location, period, current, color, bullets, stack }) => (
               <div
                 key={`${role}-${company}`}
