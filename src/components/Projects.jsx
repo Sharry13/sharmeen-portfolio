@@ -23,9 +23,9 @@ const PROJECTS = [
     description:
       "Hackathon's agentic AI system leading to full-scale implementation. Autonomously recommends inter-warehouse transfers or vendor sourcing based on real-time stock availability, auto-generates STO/PO documents, integrates live SAP S/4HANA data.",
     highlights: [
-      "Agentic AI Hackathon participant — now in production",
+      "Agentic AI Hackathon winner — now in production",
       "Auto-generates STO/PO documents autonomously",
-      "Real-time SAP S/4HANA integration for life sciences & automotive",
+      "Real-time SAP S/4HANA integration for life sciences",
     ],
     stack: ["LangGraph", "Azure OpenAI", "S/4HANA APIs", "Python", "SAP BTP", "SAP GenAI Hub"],
     icon: "🤖",

@@ -113,7 +113,7 @@ export default function Hero() {
               animation: "pulse 2s ease-in-out infinite",
             }}
           />
-          Senior Analyst @ Capgemini
+          Senior Analyst- Data Scientist @ Capgemini
         </div>
 
         {/* Name */}

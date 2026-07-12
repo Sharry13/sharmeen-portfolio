@@ -140,8 +140,8 @@ export default function Recognition() {
               Agentic AI Hackathon @ Capgemini
             </h3>
             <p style={{ fontSize: "14px", color: "rgba(226,232,240,0.55)", lineHeight: 1.65, margin: 0 }}>
-              Participated in the internal Agentic AI hackathon and was tasked with leading the 
-              full-scale production implementation — now live in life sciences &amp; automotive verticals.
+              Won the internal Agentic AI hackathon and was tasked with leading the 
+              full-scale production implementation — now live in life sciences.
             </p>
           </div>
 
