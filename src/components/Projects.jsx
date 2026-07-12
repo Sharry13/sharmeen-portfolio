@@ -2,17 +2,17 @@ import { useFadeUp } from "../hooks/useFadeUp";
 
 const PROJECTS = [
   {
-    title: "GxP-Compliant CSV Documentation Bot",
+    title: "ERP ValGenie",
     category: "GenAI · SAP BTP · Life Sciences",
     color: "#fbbf24",
     description:
-      "Production GenAI chatbot at Capgemini on SAP BTP automating GxP-compliant CSV documentation. Generates regulation-aligned validation plans based on change request type with full audit trail compliance through approval workflows.",
+      "Production GenAI chatbot at Capgemini on SAP BTP automating GxP-compliant CSV documentation and SOP Management. Generates regulation-aligned validation plans based on change request type with full audit trail compliance through approval workflows.",
     highlights: [
       "Greenfield / brownfield / upgrade change request handling",
       "Intermediate approval workflow with audit trail",
       "Deployed on SAP BTP with SAP AI Core integration",
     ],
-    stack: ["SAP BTP", "SAP AI Core", "SAP GenAI Hub", "LangGraph", "ABAP Cloud", "Python"],
+    stack: ["SAP BTP", "SAP AI Core", "SAP GenAI Hub", "LangGraph", "FastAPI", "Jira", "Python"],
     icon: "🏥",
     live: true,
   },
@@ -27,7 +27,7 @@ const PROJECTS = [
       "Auto-generates STO/PO documents autonomously",
       "Real-time SAP S/4HANA integration for life sciences",
     ],
-    stack: ["LangGraph", "Azure OpenAI", "S/4HANA APIs", "Python", "SAP BTP", "SAP GenAI Hub"],
+    stack: ["SAP BTP", "SAP AI Core", "S/4HANA APIs", "LangGraph", "Python", "FastAPI", "SAP GenAI Hub"],
     icon: "🤖",
     live: true,
   },

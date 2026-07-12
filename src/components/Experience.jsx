@@ -10,9 +10,9 @@ const EXPERIENCES = [
     color: "var(--teal)",
     bullets: [
       "Developing a GenAI-powered chatbot on SAP BTP to automate GxP-compliant CSV documentation, generating regulation-aligned validation based on change requests (greenfield/brownfield/upgrade) with audit trail compliance through intermediate approval workflows.",
-      "Led full-scale Agentic AI implementation from hackathon participation — autonomously recommends inter-warehouse transfers or vendor sourcing based on stock availability, auto-generates STO/PO documents, integrates real-time SAP S/4HANA data for life sciences industries.",
+      "Led full-scale Agentic AI implementation from hackathon winning — autonomously recommends inter-warehouse transfers or vendor sourcing based on stock availability, auto-generates STO/PO documents, integrates real-time SAP S/4HANA data for life sciences industries.",
     ],
-    stack: ["SAP BTP", "SAP AI Core", "S/4HANA APIs", "Python", "LangGraph", "Azure OpenAI", "ABAP Cloud", "SAP GenAI Hub"],
+    stack: ["SAP BTP", "SAP AI Core", "S/4HANA APIs", "Python", "LangGraph", "ABAP Cloud", "SAP GenAI Hub"],
   },
   {
     role: "Data Science Intern",

@@ -125,7 +125,7 @@ export default function Recognition() {
                 marginBottom: "10px",
               }}
             >
-              Hackathon Participant → Production
+              Hackathon Winner → Production
             </div>
             <h3
               style={{
